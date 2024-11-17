@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <header>
+            <h1>Coding Quiz</h1>
+            <p>Test your coding skills!</p>
+        </header>
+        
+        <div id="question" class="question-box"></div>
+        <div id="answers" class="answers-container"></div>
+        
+        <div class="buttons">
+            <button class="btn next-btn" onclick="nextQuestion()">Next Question</button>
+            <button class="btn end-quiz-btn" onclick="endQuiz()">End Quiz</button>
+        </div>
+    </div>
+
+    <div id="result" class="result" style="display: none;">
+        <h2>Your Score: <span id="score"></span></h2>
+        <button class="btn restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
